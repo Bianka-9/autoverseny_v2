@@ -65,6 +65,12 @@ public class StartController {
 
     }
 
+    @FXML
+    void onClickAboutButton(ActionEvent event) {
+        App.setRoot("aboutScene");
+
+    }
+
     
 
 }
