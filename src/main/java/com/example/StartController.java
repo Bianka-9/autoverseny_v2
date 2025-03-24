@@ -53,7 +53,6 @@ public class StartController {
         bet.name = name;
         bet.win = win;
         betTable.getItems().add(bet);
-        //System.out.println(name + " " + win); csekkoláshoz
         nameField.setText("");
         winCombo.setValue("");
 
@@ -62,7 +61,6 @@ public class StartController {
 
     @FXML
     void onClickRaceButton(ActionEvent event) {
-        System.out.println("Versenyhez button OK");
         App.setRoot("mainScene");
 
     }

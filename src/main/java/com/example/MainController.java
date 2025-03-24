@@ -62,7 +62,6 @@ public class MainController {
     void onClickBackButton(ActionEvent event) {
         for (Car car: carList){
             
-                // car.name
                 car.setScaleX(20);
 
             }
@@ -88,7 +87,6 @@ public class MainController {
 
     @FXML
     void onClickPreviousButton(ActionEvent event) {
-        System.out.println("vissza OK");
         App.setRoot("startScene");   
     }
 }

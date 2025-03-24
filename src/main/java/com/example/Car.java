@@ -8,13 +8,11 @@ import javafx.scene.shape.Rectangle;
 import javafx.scene.text.Text;
 
 
-//Rectangle
-
 
 public class Car extends StackPane {
     String name;
     Color color;
-    Random ran = new Random(); //kocsiknak a sebességének a változtatásához kell majd
+    Random ran = new Random();
     Text text = new Text();
     Rectangle rec = new Rectangle(50, 30);
 
@@ -32,8 +30,6 @@ public class Car extends StackPane {
         }
 
 
-        // System.out.println(name+ " " +color.getHue());
-
         this.rec.setY(0);
         this.rec.setX(0);
         this.getChildren().addAll(rec, text);
@@ -41,9 +37,6 @@ public class Car extends StackPane {
         this.setLayoutX(20);
         this.setLayoutY(y);
 
-
-        // this.setHeight(30);
-        // this.setWidth(50);
 
     }
 
