@@ -31,8 +31,6 @@ public class MainController {
         carList.add(new Car("piros", Color.RED, 160));
         carList.add(new Car("zöld", Color.GREEN, 200));
         carList.add(new Car("lila", Color.VIOLET, 240));
-        // Car car1 = new Car("kék", Color.BLUE, 120);
-        // Car car2 = new Car("piros", Color.RED, 160);
         this.boardPane.getChildren().addAll(carList);
 
         this.timeline = new Timeline();
@@ -62,7 +60,7 @@ public class MainController {
     void onClickBackButton(ActionEvent event) {
         for (Car car: carList){
             
-                car.setScaleX(20);
+                car.setLayoutX(20);
 
             }
             this.timeline.stop();

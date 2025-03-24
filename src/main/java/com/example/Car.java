@@ -30,8 +30,7 @@ public class Car extends StackPane {
         }
 
 
-        this.rec.setY(0);
-        this.rec.setX(0);
+
         this.getChildren().addAll(rec, text);
 
         this.setLayoutX(20);
