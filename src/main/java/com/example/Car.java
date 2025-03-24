@@ -24,16 +24,26 @@ public class Car extends StackPane {
         this.rec.setFill(color);
         
         this.text.setText(name);
+
+        if (color.getHue()>200){
+            text.setFill(Color.WHITE);
+        }else{
+            text.setFill(Color.BLACK);
+        }
+
+
+        // System.out.println(name+ " " +color.getHue());
+
         this.rec.setY(0);
-        this.rec.setX(0); //20 volt eredetileg
-        this.getChildren().add(rec);
+        this.rec.setX(0);
+        this.getChildren().addAll(rec, text);
 
         this.setLayoutX(20);
         this.setLayoutY(y);
 
 
-        this.setHeight(30);
-        this.setWidth(50);
+        // this.setHeight(30);
+        // this.setWidth(50);
 
     }
 
