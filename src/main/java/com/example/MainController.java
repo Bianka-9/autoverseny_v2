@@ -39,14 +39,14 @@ public class MainController {
         timeline.setCycleCount(Timeline.INDEFINITE);
         KeyFrame frame = new KeyFrame(Duration.seconds(0.09),e->{
             for (Car car: carList){
-                if(car.getX()+ car.getWidth()>TARGET){
+                if(car.getLayoutX()+ car.getWidth()>TARGET){
                     if(!resultList.getItems().contains(car.name)){
                         resultList.getItems().add(car.name);
                     }    
                 }
             
 
-            if (car.getX()<538) {
+            if (car.getLayoutX()<538) {
                 car.move();
             }
             
@@ -63,7 +63,7 @@ public class MainController {
         for (Car car: carList){
             
                 // car.name
-                car.setX(20);
+                car.setScaleX(20);
 
             }
             this.timeline.stop();
